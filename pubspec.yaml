@@ -1,0 +1,26 @@
+name: bugfree_flutter
+description: >-
+  bugfree SDK for Flutter applications: reports uncaught errors with the steps
+  that led to them, device context and release health.
+version: 0.9.2
+homepage: https://github.com/subnomic/bugfree-flutter-sdk
+repository: https://github.com/subnomic/bugfree-flutter-sdk
+issue_tracker: https://github.com/subnomic/bugfree-flutter-sdk/issues
+topics:
+  - error-tracking
+  - monitoring
+  - crash-reporting
+
+environment:
+  sdk: ">=3.5.0 <4.0.0"
+  flutter: ">=3.24.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  http: ^1.2.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0

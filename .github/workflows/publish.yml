@@ -1,0 +1,27 @@
+name: Publish to pub.dev
+
+# Runs in github.com/subnomic/bugfree-flutter-sdk, where the bugfree release pushes
+# this directory and a tag v1.2.3. pub.dev trusts the repository's OIDC token for
+# tags that match v{{version}}, so no credentials are stored. A version pub.dev
+# already has is refused; run again, the job fails without changing anything.
+
+on:
+  push:
+    tags: ['v[0-9]+.[0-9]+.[0-9]+*']
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    permissions:
+      id-token: write
+    steps:
+      - uses: actions/checkout@v4
+      # setup-dart exchanges the OIDC token for a pub.dev credential.
+      - uses: dart-lang/setup-dart@v1
+      - uses: subosito/flutter-action@v2
+        with:
+          channel: stable
+      - run: flutter pub get
+      - run: flutter analyze
+      - run: flutter test
+      - run: flutter pub publish --force
