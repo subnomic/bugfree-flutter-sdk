@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.9.4
+
+- No changes of its own: released with the server and the other SDKs
+
 ## 0.9.2
 
 - First release: errors from `FlutterError.onError` and `PlatformDispatcher.onError`,
