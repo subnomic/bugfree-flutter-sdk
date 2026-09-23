@@ -155,14 +155,14 @@ everything quiet.
 
 The SDK is published to `github.com/subnomic/bugfree-flutter-sdk`, with this
 directory as that repository's root, and to pub.dev, by the bugfree release: one
-release on the bugfree repository's Releases page with the tag `v0.9.4`
+release on the bugfree repository's Releases page with the tag `v0.9.5`
 publishes the server and every SDK at that version. Raise `version` in
 `pubspec.yaml`, `sdkVersion` in `lib/src/client.dart` and the section in
 `CHANGELOG.md` with the others.
 
 The release workflow checks that the versions match the tag, runs the analyzer
 and the tests, pushes this directory to that repository as one commit and tags
-it there as `v0.9.4`. The tag starts `.github/workflows/publish.yml` in that
+it there as `v0.9.5`. The tag starts `.github/workflows/publish.yml` in that
 repository, which publishes to pub.dev through GitHub's OIDC token, so no pub.dev
 credentials are stored anywhere. Before the first release, publish the package
 once by hand and turn on automated publishing on pub.dev for

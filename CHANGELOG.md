@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.9.5
+
+- No changes of its own: released with the server and the other SDKs
+
 ## 0.9.4
 
 - No changes of its own: released with the server and the other SDKs

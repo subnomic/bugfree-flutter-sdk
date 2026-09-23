@@ -16,7 +16,7 @@ import 'stack_trace.dart';
 import 'transport.dart';
 
 /// The version of this SDK; raised with the other SDKs at every release.
-const sdkVersion = '0.9.4';
+const sdkVersion = '0.9.5';
 
 /// Reports errors from one Flutter application to one bugfree project.
 ///
